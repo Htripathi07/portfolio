@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hariom Tripathi</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <header id="navbar">
+      <h1>Hariom Tripathi</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div id="left">
+        <div>Hi, My Name is </div>
+        <div id="name">Hariom Tripathi</div>
+        <div>and I am a Passionate</div>
+        <div><span id="element"></span></div>
+        
+      </div>
+      <div id="right">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-wEb3O6M9SY8UVtSUpnXSv7WPs3c2iEYQKw&usqp=CAU" alt="img">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="content">
+        <p>
+          Write a brief introduction about yourself and your experience as a
+          full-stack developer.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project Title</h3>
+        <div class="project-details">
+          <p>Description of the project.</p>
+          <div class="project-links">
+            <a href="#">View Demo</a>
+            <a href="#">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project items as needed -->
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <!-- Add more skills as needed -->
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="content">
+        <p>
+          You can reach me at
+          <a href="mailto:tripathihariom34@example.com"
+            >tripathihariom34@example.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Hariom Tripathi</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full Stack Web Developer.'],
+          typeSpeed: 70,
+        });
+      </script>
+  </body>
+</html>
