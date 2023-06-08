@@ -2,50 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo" sizes="64x64" />
     <title>Hariom Tripathi</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
   <body>
-    <header id="navbar">
-      <h1>Hariom Tripathi</h1>
+    <div class="header">
+      <input type="checkbox" id="toggle" />
+
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="logo" />
+        </a>
+
+        <label class="navbar-toggler" for="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link">Home</a></li>
+          <li class="nav-item"><a class="nav-link">About</a></li>
+          <li class="nav-item"><a class="nav-link">Projects</a></li>
+          <li class="nav-item"><a class="nav-link">Skills</a></li>
+          <li class="nav-item"><a class="nav-link">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
 
     <section id="home">
       <div id="left">
-        <div>Hi, My Name is </div>
+        <div>Hi, My Name is</div>
         <div id="name">Hariom Tripathi</div>
         <div>and I am a Passionate</div>
         <div><span id="element"></span></div>
-        
       </div>
       <div id="right">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-wEb3O6M9SY8UVtSUpnXSv7WPs3c2iEYQKw&usqp=CAU" alt="img">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-wEb3O6M9SY8UVtSUpnXSv7WPs3c2iEYQKw&usqp=CAU"
+          alt="img"
+        />
       </div>
     </section>
 
-    <section id="about">
-      <h2>About Me</h2>
+    <section >
+      <div id="about">About Me</div>
       <div class="content">
-        <p>
-          Write a brief introduction about yourself and your experience as a
-          full-stack developer.
-        </p>
+        <div id="l-c">
+          <img src="Hariom.jpeg" alt="self" />
+        </div>
+        <div id="r-c">
+          <h3>
+            Motivated and enthusiastic fresh full stack developer with hands-on
+            experience in HTML, CSS, JavaScript, React, Node.js, and a
+            commitment to continuous learning. Strong collaborator and quick
+            learner eager to contribute to innovative projects.
+          </h3>
+        </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section >
+      <div id="skills">Skills</div>
+      <div id="skills-parent">
+     
+      
+     
+    </div>
+    </section>
+
+    <section >
+      <div id="projects">Projects</div>
       <div class="project">
         <h3>Project Title</h3>
         <div class="project-details">
@@ -59,18 +89,7 @@
       <!-- Add more project items as needed -->
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skill-list">
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
-
+   
     <section id="contact">
       <h2>Contact</h2>
       <div class="content">
@@ -90,10 +109,10 @@
     <script src="index.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-          strings: ['Full Stack Web Developer.'],
-          typeSpeed: 70,
-        });
-      </script>
+      var typed = new Typed("#element", {
+        strings: ["Full Stack Web Developer."],
+        typeSpeed: 70,
+      });
+    </script>
   </body>
 </html>
